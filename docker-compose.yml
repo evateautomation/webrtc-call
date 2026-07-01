@@ -1,0 +1,11 @@
+services:
+  webrtc-call:
+    image: node:20-alpine
+    container_name: webrtc-call
+    working_dir: /app
+    volumes:
+      - ./:/app
+    command: sh -c "npm install && npm start"
+    ports:
+      - "3010:3010"
+    restart: unless-stopped
