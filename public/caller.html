@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Caller</title>
+</head>
+<body>
+  <h2>Device 1 - Caller</h2>
+
+  <video id="localVideo" autoplay muted playsinline width="300"></video>
+  <video id="remoteVideo" autoplay playsinline width="300"></video>
+
+  <br><br>
+  <button onclick="startCall()">Start Call</button>
+
+  <script>
+    const ROLE = "caller";
+    const ROOM = "demo-room";
+  </script>
+  <script src="app.js"></script>
+</body>
+</html>
